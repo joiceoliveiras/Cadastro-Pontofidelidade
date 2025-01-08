@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Revisão e Aceitação dos Termos</title>
+    <link rel="stylesheet" href='styles.css'>
+</head>
+<body onload='preencherResumo()'>
+    <div class='card'>
+        <h1>Cadastro - Revisão e Aceitação dos Termos</h1>
+
+        Nome: <span id='resumoNome'></span><br />
+        E-mail: <span id='resumoEmail'></span><br />
+        Data de Nascimento: <span id='resumoData'></span><br />
+        Categorias Favoritas: <span id='resumoCategorias'></span><br />
+        Frequência de Compras: <span id='resumoFrequencia'></span><br />
+        Como conheceu: <span id='resumoComoConheceu'></span><br />
+
+        <label for='termos'>Aceitar termos e condições:</label><br />
+        <input type='checkbox' id='termos' name='termos' required> Eu aceito os termos e condições.<br /><br />
+
+        <button onclick='finalizarCadastro()'>Finalizar Cadastro</button>
+
+        <a href='informacoes.html' class='button'>Voltar</a> 
+    </div>
+
+    <script src='script.js'></script> 
+</body>
+</html>
+

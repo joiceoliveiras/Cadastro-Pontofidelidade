@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Preferências de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Cadastro - Preferências de Compras</h1>
+        <form id="preferenciasForm" onsubmit="salvarPreferencias(event)">
+            <label for="categorias">Categorias de Produtos Favoritas:</label><br>
+            <input type="text" id="categorias" name="categorias" placeholder="ex.: eletrônicos, roupas..." required><br><br>
+
+            <label for="frequencia">Frequência de Compras:</label><br>
+            <select id="frequencia" name="frequencia" required>
+                <option value="">Selecione...</option>
+                <option value="semanal">Semanal</option>
+                <option value="mensal">Mensal</option>
+                <option value="ocasional">Ocasional</option>
+            </select><br><br>
+
+            <input type="submit" value="Próximo">
+        </form>
+        <a href="index.html" class="button">Voltar</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

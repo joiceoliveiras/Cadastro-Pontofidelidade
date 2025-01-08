@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Informações Adicionais</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Cadastro - Informações Adicionais</h1>
+        <form id="informacoesForm" onsubmit="salvarInformacoesAdicionais(event)">
+            <label for="como_conheceu">Como conheceu o programa?</label><br>
+            <input type="text" id="como_conheceu" name="como_conheceu" required><br><br>
+
+            <label for="promocoes">Aceitar receber promoções e novidades?</label><br>
+            <input type="checkbox" id='promocoes' name='promocoes'><br><br>
+
+            <input type="submit" value="Próximo">
+        </form>
+        <a href='preferencias.html' class='button'>Voltar</a> 
+    </div>
+
+    <script src='script.js'></script>
+</body>
+</html>
